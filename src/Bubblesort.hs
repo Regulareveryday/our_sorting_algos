@@ -13,7 +13,8 @@ module Bubblesort(
 bubblesort,
 bubblesort_loop,
 bubblesort_one_iteration
-)where
+)
+where
 
 -- |Function which sorts elements in a table by using bubblesort algorithm 
 bubblesort :: (Ord a) => [a] -> [a]

@@ -13,7 +13,8 @@ module Insertionsort(
 -- *functions
 insertionsort,
 insert
-)where
+)
+where
 
 -- | Function which calls function insert with empty tail (sorted by default) at the beggining and unsorted list. In the end an output list is sorted.
 insertionsort :: (Ord a) => [a] -> [a]

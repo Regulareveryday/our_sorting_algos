@@ -9,7 +9,8 @@ module HUnit(
 	heapsortTest,
 	childrenTest,
 	parentTest
-)where
+)
+where
 
 import Test.HUnit
 --import Data.List

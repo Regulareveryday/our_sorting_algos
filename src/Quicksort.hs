@@ -11,7 +11,8 @@ Portability : POSIX
 module Quicksort(
 -- *functions
 quicksort
-)where
+)
+where
 
 
 -- |Function which sorts elements in a table by using quicksort algorithm. Function separates list into two lists: elements smaller than "head" and elements greater than "head". The algorithm is applied recursively to these lists and then the list with smaller elements, the selected element and the list of greater elements are concatenated together.

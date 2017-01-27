@@ -17,7 +17,8 @@ heapify,
 buildHeap,
 heapSortLoop,
 heapsort
-)where
+)
+where
 
 -- |Function which takes index of a cell in a table and returns its parent
 parent :: (Integral a, Num a, Ord a) => a -> a

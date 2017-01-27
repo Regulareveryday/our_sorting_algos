@@ -14,7 +14,8 @@ firststhalf,
 secondhalf,
 merge,
 mergesort
-)where
+)
+where
 
 -- | Function which returns first half of the list to sort.
 firststhalf :: [a] -> [a]
