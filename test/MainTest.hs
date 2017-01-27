@@ -22,12 +22,12 @@ quickCheck idempotent_heapsort
 
 --the first element in a sorted list should always be the smallest element of the input list
 --filtering out empty list (reveal an error because od definition of head and minimum)
- sorted_list_minimum_quicksort 		
- sorted_list_minimum_bubblesort  		
- sorted_list_minimum_insertionsort 	
- sorted_list_minimum_mergesort 	
- sorted_list_minimum_selectionsort  	
- sorted_list_minimum_heapsort  		
+quickCheck sorted_list_minimum_quicksort 		
+quickCheck sorted_list_minimum_bubblesort  		
+quickCheck sorted_list_minimum_insertionsort 	
+quickCheck sorted_list_minimum_mergesort 	
+quickCheck sorted_list_minimum_selectionsort  	
+quickCheck sorted_list_minimum_heapsort  		
 
 
 
