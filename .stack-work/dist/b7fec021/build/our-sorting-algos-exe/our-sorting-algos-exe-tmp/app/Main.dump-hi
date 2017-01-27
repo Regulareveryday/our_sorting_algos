@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-26 20:52:34.1156456 UTC
+2017-01-27 08:20:58.1969199 UTC
 
 interface main@main:Main 8001
-  interface hash: 0b4c8546ff6b43e4ef37461ad7a860a8
-  ABI hash: 0158b11f766af20c1a849c5a394bb105
-  export-list hash: 4f4f56a8da0f16337aa97066f334c275
+  interface hash: dfbeda6c42e20c5ec9cb4b44e8a4a204
+  ABI hash: 3af17967b2c03598c25d9e82964c6526
+  export-list hash: 98c80da6da2744f5caec928d1a51c1a9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f9f64adb396c550f54ec0150c9872e6d
   sig of: Nothing
@@ -13,6 +13,7 @@ interface main@main:Main 8001
   where
 exports:
   Main.main
+  Main.options
 module dependencies:
 package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
                       integer-gmp-1.0.0.1
@@ -24,8 +25,14 @@ family instance modules: base-4.9.0.0:Control.Applicative
                          base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
                          base-4.9.0.0:GHC.TypeLits
 import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
 import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
-import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Lib 398639719f381f773de26bacea728c96
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Bubblesort bc217c85defff778837e01c6c4388766
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Heapsort 7662403c30bac845d3e2197c789788d5
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Insertionsort c31815e692f6d0187199fdf353321fa7
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Mergesort 007a30bb491b9af250d7296536512dca
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Quicksort 75e16aaf9e6c78af16a42c0966e668a0
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Selectionsort a92f9d03eb0e827e19f05c014f7f25e8
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -38,19 +45,68 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-fc8c1ff086d0f40b11a7ef1a1392aed0
+3e9410a90486db31b54a9b02f92791a2
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-5e11232799c2d7e035974e439ec442bc
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+8b41aedb4c1cdb4a5da5620ac866edee
   main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main3
+                        GHC.Types.False
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.False
+                   ipv }) -}
+62a00f4754589c66bb7045ea04254b71
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Choose 'options' to see what algorithms you can use\n"#) -}
+42bd7c393b289c45f3d7c4d7d94d25b8
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \Welcome to our project: time comparision of sorting algorithms in Haskell! Explore different sorting algos!\n\
+                   \\n"#) -}
+d7c25af612d8ad02a071d351ff84c86a
+  main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+bd50e1529e19c28c4755818242f964eb
+  options :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.options1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e90a69e7dae4796ee1077d94f6e90466
+  options1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.options2
+                   GHC.Types.False
+                   eta) -}
+f8a899aa558495f0e55f9a2f5a8f3676
+  options2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "\n\
+                   \bubblesort, insertionsort, heapsort, mergesort, selectionsort, quicksort\n"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

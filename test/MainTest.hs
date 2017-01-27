@@ -1,6 +1,8 @@
 
 import QuickCheck
 import Test.QuickCheck
+import HUnit
+import Test.HUnit
 
 main :: IO Counts
 main = do
@@ -68,3 +70,9 @@ quickCheck output_perm_of_input_insertionsort
 quickCheck output_perm_of_input_mergesort
 quickCheck output_perm_of_input_selectionsort 
 quickCheck output_perm_of_input_heapsort  
+
+putStrLn "quicksortTest, bubblesortTest, insertionsortTest, insertTest, mergesortTest, mergeTest, selectionsortTest, heapsortTest, childrenTest,parentTest"
+  runTestTT $ TestList [TestLabel "quicksortTest" quicksortTest,TestLabel "bubblesortTest"bubblesortTest,TestLabel "insertionsortTest" insertionsortTest, TestLabel "insertTest" mergesortTest,TestLabel "mergesortTest" mergesortTest,
+ 
+    TestLabel "mergeTest" mergeTest,TestLabel "selectionsortTest" selectionsortTest,TestLabel "heapsortTest" heapsortTest, TestLabel "childrenTest" childrenTest, TestLabel "parentTest" parentTest ]]
+, 

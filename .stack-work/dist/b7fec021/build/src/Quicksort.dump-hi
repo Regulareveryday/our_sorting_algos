@@ -1,0 +1,55 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-27 05:35:05.6598354 UTC
+
+interface our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Quicksort 8001
+  interface hash: 1a7699ed4703a0a28e21746f5a5597ca
+  ABI hash: 75e16aaf9e6c78af16a42c0966e668a0
+  export-list hash: dcfa46da25795574a8e27ec78c23e914
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 365edb496d38399416a64131c77130e2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Quicksort.quicksort
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+41edd20c1d4ceb562702e13c4f5b6a13
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Quicksort.$trModule2
+                   Quicksort.$trModule1) -}
+2daf7dbdeff8453aba5d9c5b73a52bdf
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Quicksort"#) -}
+9b2e1db6278a21e14fef7a6e36097ada
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6"#) -}
+c879469c92a143826b813ed43ca61a22
+  quicksort :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,C(C1(U)),A,A)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

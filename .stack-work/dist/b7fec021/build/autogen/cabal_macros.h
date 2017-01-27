@@ -14,6 +14,13 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 0)
 
+/* package HUnit-1.3.1.2 */
+#define VERSION_HUnit "1.3.1.2"
+#define MIN_VERSION_HUnit(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  3 || \
+  (major1) == 1 && (major2) == 3 && (minor) <= 1)
+
 /* package QuickCheck-2.8.2 */
 #define VERSION_QuickCheck "2.8.2"
 #define MIN_VERSION_QuickCheck(major1,major2,minor) (\

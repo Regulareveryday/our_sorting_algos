@@ -1,0 +1,89 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-27 05:35:05.1334312 UTC
+
+interface our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Mergesort 8001
+  interface hash: 3d655a10f7d2f4ffd13f3dc1966cdafe
+  ABI hash: 007a30bb491b9af250d7296536512dca
+  export-list hash: 2e48ffff98a5cd178e146ebf943257f4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 365edb496d38399416a64131c77130e2
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Mergesort.firststhalf
+  Mergesort.merge
+  Mergesort.mergesort
+  Mergesort.secondhalf
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:GHC.Real 011de9ca3282ad24a84e4e15f974f98e
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+82d38c5f3e42f0ae27d63f654f95dd85
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Mergesort.$trModule2
+                   Mergesort.$trModule1) -}
+bf6860f6635cc7b6ed5c407a99c871a7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Mergesort"#) -}
+32f27651ed3de672f8d0781d6851bb26
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6"#) -}
+e769b1584fcc6cce733d2b8c9c200c2f
+  $wunsafeDrop :: GHC.Prim.Int# -> [a1] -> [a1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Inline: [0] -}
+512ae66bff1f860e6dd7975669866ccb
+  firststhalf :: [a] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ @ a (xs :: [a]) ->
+                 case GHC.List.$wlenAcc @ a xs 0# of ww2 { DEFAULT ->
+                 case GHC.Classes.divInt# ww2 2# of ww4 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0# ww4) of wild {
+                   GHC.Types.False -> GHC.Types.[] @ a
+                   GHC.Types.True -> GHC.List.$wunsafeTake @ a ww4 xs } } }) -}
+7c7e36d2d1f1266138fc19d0ac518007
+  merge :: GHC.Classes.Ord a => [a] -> [a] -> [a]
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,A,A,A)><S,1*U><S,1*U> -}
+041e185bd43619a1bdba1460c360dc91
+  mergesort :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,A,A,A)><S,U> -}
+45c9ebc30569db41f54ad0f74e1f54d2
+  secondhalf :: [a] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ @ a (xs :: [a]) ->
+                 case GHC.List.$wlenAcc @ a xs 0# of ww2 { DEFAULT ->
+                 case GHC.Classes.divInt# ww2 2# of ww4 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww4 0#) of wild {
+                   GHC.Types.False -> Mergesort.$wunsafeDrop @ a ww4 xs
+                   GHC.Types.True -> xs } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
