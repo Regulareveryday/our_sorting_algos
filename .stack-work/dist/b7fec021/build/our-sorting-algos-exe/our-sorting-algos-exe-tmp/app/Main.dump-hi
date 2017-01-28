@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-01-27 08:59:28.7274355 UTC
+2017-01-28 17:08:03.7851724 UTC
 
 interface main@main:Main 8001
-  interface hash: dfbeda6c42e20c5ec9cb4b44e8a4a204
+  interface hash: c8dda922ffba0484bb8e83c9ac0aa057
   ABI hash: 3af17967b2c03598c25d9e82964c6526
   export-list hash: 98c80da6da2744f5caec928d1a51c1a9
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -29,7 +29,7 @@ import  -/  base-4.9.0.0:System.IO c1068c4f4231e3198e330f99a58145b0
 import  -/  ghc-prim-0.5.0.0:GHC.Types 7378e41b7749213c8c88ceb6b0665d4c
 import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Bubblesort bc217c85defff778837e01c6c4388766
 import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Heapsort 7662403c30bac845d3e2197c789788d5
-import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Insertionsort c31815e692f6d0187199fdf353321fa7
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Insertionsort a2fbcfe394a1531e44663881473f4f0c
 import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Mergesort 007a30bb491b9af250d7296536512dca
 import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Quicksort 75e16aaf9e6c78af16a42c0966e668a0
 import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Selectionsort a92f9d03eb0e827e19f05c014f7f25e8

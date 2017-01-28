@@ -1,15 +1,17 @@
 module HUnit(
-	quicksortTest,
-	bubblesortTest,
-	insertionsortTest,
-	insertTest,
-	mergesortTest,
-	mergeTest,
-	selectionsortTest,
-	heapsortTest,
-	childrenTest,
-	parentTest
-)where
+    quicksortTest,
+    bubblesortTest,
+    insertionsortTest,
+    myInsertTest,
+    mergesortTest,
+    mergeTest,
+    selectionsortTest,
+    heapsortTest,
+    childrenTest1,
+	childrenTest2,
+    parentTest
+)
+where
 
 import Test.HUnit
 import Heapsort
@@ -29,8 +31,8 @@ bubblesortTest = TestCase $ assertEqual "bubblesortTest" ([0,1,2,3,4,7]) (bubble
 insertionsortTest :: Test
 insertionsortTest = TestCase $ assertEqual "insertionsorTest" ([0,1,2,3,4,7]) (insertionsort [3,1,2,4,7,0])
 
-insertTest :: Test 
-insertTest = TestCase $ assertEqual "insertTest" (insert 4 [2, 3, 5, 7]) ([2, 3, 4, 5, 7])
+myInsertTest :: Test 
+myInsertTest = TestCase $ assertEqual "myInsertTest" (myInsert [1,4] [2, 3, 5, 7]) ([1, 2, 3, 4, 5, 7])
 
 mergesortTest :: Test
 mergesortTest = TestCase $ assertEqual "mergesortTest" ([0,1,2,3,4,7]) (mergesort [3,1,2,4,7,0])

@@ -1,0 +1,986 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-28 20:22:16.4226055 UTC
+
+interface main@main:QuickCheck 8001
+  interface hash: c8c2aedf15463928308719598dc6767d
+  ABI hash: fabbe42b9cf628923b64cff4f0f4232c
+  export-list hash: b1ee7c065b597111aa39fd6c7cd8f844
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7dcd246fc4e0363d11beac4112be1c4a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  QuickCheck.compare_elements_bubblesort
+  QuickCheck.compare_elements_heapsort
+  QuickCheck.compare_elements_insertionsort
+  QuickCheck.compare_elements_mergesort
+  QuickCheck.compare_elements_quicksort
+  QuickCheck.compare_elements_selectionsort
+  QuickCheck.idempotent_bubblesort
+  QuickCheck.idempotent_heapsort
+  QuickCheck.idempotent_insertionsort
+  QuickCheck.idempotent_mergesort
+  QuickCheck.idempotent_quicksort
+  QuickCheck.idempotent_selectionsort
+  QuickCheck.output_perm_of_input_bubblesort
+  QuickCheck.output_perm_of_input_heapsort
+  QuickCheck.output_perm_of_input_insertionsort
+  QuickCheck.output_perm_of_input_mergesort
+  QuickCheck.output_perm_of_input_quicksort
+  QuickCheck.output_perm_of_input_selectionsort
+  QuickCheck.sorted_list_maximum_bubblesort
+  QuickCheck.sorted_list_maximum_insertionsort
+  QuickCheck.sorted_list_maximum_mergesort
+  QuickCheck.sorted_list_maximum_quicksort
+  QuickCheck.sorted_list_maximum_selectionsort
+  QuickCheck.sorted_list_minimum_bubblesort
+  QuickCheck.sorted_list_minimum_heapsort
+  QuickCheck.sorted_list_minimum_insertionsort
+  QuickCheck.sorted_list_minimum_mergesort
+  QuickCheck.sorted_list_minimum_quicksort
+  QuickCheck.sorted_list_minimum_selectionsort
+  QuickCheck.sorted_list_mmaximum_heapsort
+module dependencies:
+package dependencies: QuickCheck-2.8.2@QuickCheck-2.8.2-B7cXgOk7OAiKrNRsk2SfuA
+                      Win32-2.3.1.1@Win32-2.3.1.1 array-0.5.1.1@array-0.5.1.1
+                      base-4.9.0.0* containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.1@ghc-boot-th-8.0.1
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      random-1.1@random-1.1-54KmMHXjttlERYcr1mvsAe
+                      template-haskell-2.11.0.0
+                      tf-random-0.5@tf-random-0.5-4z8OJUaXC1FRNfrLPFWAD
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.1@ghc-boot-th-8.0.1:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         template-haskell-2.11.0.0:Language.Haskell.TH.Syntax
+import  -/  QuickCheck-2.8.2@QuickCheck-2.8.2-B7cXgOk7OAiKrNRsk2SfuA:Test.QuickCheck ec112fd729f2e762f9406bd01c0d8cc4
+import  -/  QuickCheck-2.8.2@QuickCheck-2.8.2-B7cXgOk7OAiKrNRsk2SfuA:Test.QuickCheck.Property dfcc44150843de8ab6ab8b2c88500c95
+import  -/  base-4.9.0.0:Data.Foldable 3cbed01c922be29649c33015287c82ca
+import  -/  base-4.9.0.0:Data.List d711f98b49ef5d33e5b3d404631ed073
+import  -/  base-4.9.0.0:Data.OldList 3c899c6d8e6204063769214449ac0954
+import  -/  base-4.9.0.0:GHC.Base dd8044a8d640eee51828c17c476a6ba7
+import  -/  base-4.9.0.0:GHC.List 47d436dfb7454bb1883fb4d943e3f389
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type bc99d7d6ca3e6f7b722927a29e227674
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Bubblesort bc217c85defff778837e01c6c4388766
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Heapsort 7662403c30bac845d3e2197c789788d5
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Insertionsort a2fbcfe394a1531e44663881473f4f0c
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Mergesort 007a30bb491b9af250d7296536512dca
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Quicksort 75e16aaf9e6c78af16a42c0966e668a0
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Selectionsort a92f9d03eb0e827e19f05c014f7f25e8
+da021c3166767151360d0018360c744b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   QuickCheck.$trModule2
+                   QuickCheck.$trModule1) -}
+18db5b0b1ccedd09a555f63b7e417816
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "QuickCheck"#) -}
+56dc636289804b158bb67b35370a2ea8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+6e5781309264d6a6ac15d0e2c9d99f7b
+  compare_elements_bubblesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_bubblesort_ordered_elements
+                   (Bubblesort.$wbubblesort_loop
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      0#)) -}
+187c58cbba7a9953202b80bc5d2e93e6
+  compare_elements_bubblesort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+33eb9ee6ac9ce34ba2aaa338ec9cc4c1
+  compare_elements_heapsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_heapsort_ordered_elements
+                   (Heapsort.heapsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+aebdfbfbec9d3438d7091454124580ce
+  compare_elements_heapsort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+823d4142c9be8bab8d12618f00445a96
+  compare_elements_insertionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_insertionsort_ordered_elements
+                   (Insertionsort.myInsert
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      (GHC.Types.[] @ GHC.Integer.Type.Integer))) -}
+8cc4eab19bd7982583910966d56f1dac
+  compare_elements_insertionsort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+31aad11b209cbe620d4f7ef0ea51b701
+  compare_elements_mergesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_mergesort_ordered_elements
+                   (Mergesort.mergesort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+3a6fc2f9602dc0e082e4e7274a5329dc
+  compare_elements_mergesort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+b2d4f21167beabba136c517238305c2e
+  compare_elements_quicksort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_quicksort_ordered_elements
+                   (Quicksort.quicksort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+2ad3381bd5ea35c28483c0149a082719
+  compare_elements_quicksort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+77a8d2742c5e7ffc81bca302e5aa5d5e
+  compare_elements_selectionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.compare_elements_selectionsort_ordered_elements
+                   (Selectionsort.selectionsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+52be37e2e48425f56a91bfdb026d4ad4
+  compare_elements_selectionsort_ordered_elements ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+af8c5aff7a79ed0da3b02f733c3a942f
+  idempotent_bubblesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Bubblesort.$wbubblesort_loop
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Bubblesort.$wbubblesort_loop
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs
+                         0#)
+                      0#)
+                   (Bubblesort.$wbubblesort_loop
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      0#)) -}
+5db7c4c834976af4b760782767064d46
+  idempotent_heapsort :: [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Heapsort.heapsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Heapsort.heapsort
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs))
+                   (Heapsort.heapsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+39ac45601693c6d8402d7f3064afe00c
+  idempotent_insertionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Insertionsort.myInsert
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Insertionsort.myInsert
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs
+                         (GHC.Types.[] @ GHC.Integer.Type.Integer))
+                      (GHC.Types.[] @ GHC.Integer.Type.Integer))
+                   (Insertionsort.myInsert
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      (GHC.Types.[] @ GHC.Integer.Type.Integer))) -}
+a8195b76d97fcb0c53e28ac8595c232e
+  idempotent_mergesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Mergesort.mergesort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Mergesort.mergesort
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs))
+                   (Mergesort.mergesort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+c0ece9cb331a3e6932f5a1084d9ef7e2
+  idempotent_quicksort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Quicksort.quicksort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Quicksort.quicksort
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs))
+                   (Quicksort.quicksort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+253108ac2ee53598464081a055c61b6c
+  idempotent_selectionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   (Selectionsort.selectionsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      (Selectionsort.selectionsort
+                         @ GHC.Integer.Type.Integer
+                         GHC.Integer.Type.$fOrdInteger
+                         xs))
+                   (Selectionsort.selectionsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+03c337eece784493c547e8c874cebc0a
+  output_perm_of_input_bubblesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.output_perm_of_input_bubblesort_$sis_permut
+                   xs
+                   (Bubblesort.$wbubblesort_loop
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      0#)) -}
+470441148eaaeb563e5cbfe05a6a7843
+  output_perm_of_input_bubblesort_$sis_permut ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer])
+                   (ys :: [GHC.Integer.Type.Integer]) ->
+                 case Data.OldList.\\
+                        @ GHC.Integer.Type.Integer
+                        GHC.Integer.Type.$fEqInteger
+                        xs
+                        ys of wild {
+                   []
+                   -> case Data.OldList.\\
+                             @ GHC.Integer.Type.Integer
+                             GHC.Integer.Type.$fEqInteger
+                             ys
+                             xs of wild1 {
+                        [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }
+                   : ds1 ds2 -> GHC.Types.False }) -}
+c9867b6ebe264ae97208b4a596320d44
+  output_perm_of_input_heapsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.output_perm_of_input_bubblesort_$sis_permut
+                   xs
+                   (Heapsort.heapsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+771e3d703bd28fa15076d0b4ab0ef351
+  output_perm_of_input_insertionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.output_perm_of_input_bubblesort_$sis_permut
+                   xs
+                   (Insertionsort.myInsert
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs
+                      (GHC.Types.[] @ GHC.Integer.Type.Integer))) -}
+49fd5b8e65bea9dcd2f70776892c6eeb
+  output_perm_of_input_mergesort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.output_perm_of_input_bubblesort_$sis_permut
+                   xs
+                   (Mergesort.mergesort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+28cb4fde1bad15a53663d31a1d7f9e6f
+  output_perm_of_input_quicksort ::
+    [GHC.Base.String] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (xs :: [GHC.Base.String]) ->
+                 let {
+                   ys :: [GHC.Base.String]
+                   = Quicksort.quicksort
+                       @ GHC.Base.String
+                       GHC.Classes.$fOrd[]_$s$fOrd[]1
+                       xs
+                 } in
+                 case Data.OldList.\\
+                        @ GHC.Base.String
+                        GHC.Classes.$fEq[]_$s$fEq[]1
+                        xs
+                        ys of wild {
+                   []
+                   -> case Data.OldList.\\
+                             @ GHC.Base.String
+                             GHC.Classes.$fEq[]_$s$fEq[]1
+                             ys
+                             xs of wild1 {
+                        [] -> GHC.Types.True : ds1 ds2 -> GHC.Types.False }
+                   : ds1 ds2 -> GHC.Types.False }) -}
+3b8fd32993455010c5210a0745778877
+  output_perm_of_input_selectionsort ::
+    [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 QuickCheck.output_perm_of_input_bubblesort_$sis_permut
+                   xs
+                   (Selectionsort.selectionsort
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fOrdInteger
+                      xs)) -}
+33816aa10fd004013f692060f9935814
+  sorted_list_maximum_bubblesort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_maximum_bubblesort_go
+                                          (Bubblesort.$wbubblesort_loop
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild
+                                             0#)
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+b0c02a01ae3a17dce054e6ee14789922
+  sorted_list_maximum_bubblesort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+559b4a8bd13fc05a659dd4f56b6d64c3
+  sorted_list_maximum_insertionsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_maximum_insertionsort_go
+                                          (Insertionsort.myInsert
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild
+                                             (GHC.Types.[] @ GHC.Integer.Type.Integer))
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+5158b3b2347dbf481f4ac8f9e3d84e1f
+  sorted_list_maximum_insertionsort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+3f42bf132b79cd24496f8ebee4ffa570
+  sorted_list_maximum_mergesort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_maximum_mergesort_go
+                                          (Mergesort.mergesort
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild)
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+15a330f2100f72e47b39e2ad82137334
+  sorted_list_maximum_mergesort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+0c55fd20c2c4854ac9ecbb1dc8e2738b
+  sorted_list_maximum_quicksort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_maximum_quicksort_go
+                                          (Quicksort.quicksort
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild)
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+b807bffe114c53a66fbb0fe617ea86d0
+  sorted_list_maximum_quicksort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+cf7194ad54b413a7917bcf15ecc7a6b8
+  sorted_list_maximum_selectionsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_maximum_selectionsort_go
+                                          (Selectionsort.selectionsort
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild)
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+91ae88cc9b1f77724e34440f7fde8cef
+  sorted_list_maximum_selectionsort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+5295724c2394e21eae48811b901c2b0b
+  sorted_list_minimum_bubblesort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Bubblesort.$wbubblesort_loop
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild
+                                       0# of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+26eb7a797b68cc01bca61b6982e0ad1e
+  sorted_list_minimum_heapsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Heapsort.heapsort
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+9af74e1cfd51a8d7bf43b5ded0e1c106
+  sorted_list_minimum_insertionsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Insertionsort.myInsert
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild
+                                       (GHC.Types.[] @ GHC.Integer.Type.Integer) of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+763dcc3d5c52cb12a916656254494d0e
+  sorted_list_minimum_mergesort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Mergesort.mergesort
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+a68cbffb4eab7fb5a5f8b62af669c06e
+  sorted_list_minimum_quicksort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Quicksort.quicksort
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+9dd2b00099f97458038a6813007dcba5
+  sorted_list_minimum_selectionsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case Selectionsort.selectionsort
+                                       @ GHC.Integer.Type.Integer
+                                       GHC.Integer.Type.$fOrdInteger
+                                       wild of wild1 {
+                                  []
+                                  -> case GHC.List.badHead
+                                     ret_ty Test.QuickCheck.Property.Result
+                                     of {}
+                                  : x ds4
+                                  -> case GHC.Integer.Type.eqInteger#
+                                            x
+                                            (GHC.List.minimum_go ds2 ds1) of wild2 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
+                                       GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                       GHC.Types.True -> Test.QuickCheck.Property.succeeded } } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+e5cf55fb531fb8b060daf140d45c30ac
+  sorted_list_mmaximum_heapsort ::
+    [GHC.Integer.Type.Integer] -> Test.QuickCheck.Property.Property
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: [GHC.Integer.Type.Integer]) ->
+                 case xs of wild {
+                   []
+                   -> Test.QuickCheck.Property.$fTestableDiscard2
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0])))
+                   : ds1 ds2
+                   -> let {
+                        x1 :: Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+                        = Test.QuickCheck.Property.protectResults
+                            (Test.QuickCheck.Property.MkRose
+                               @ Test.QuickCheck.Property.Result
+                               (case GHC.Integer.Type.eqInteger#
+                                       (QuickCheck.sorted_list_mmaximum_heapsort_go
+                                          (Heapsort.heapsort
+                                             @ GHC.Integer.Type.Integer
+                                             GHC.Integer.Type.$fOrdInteger
+                                             wild)
+                                          (GHC.List.lastError @ GHC.Integer.Type.Integer))
+                                       (GHC.List.maximum_go ds2 ds1) of wild1 { DEFAULT ->
+                                case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 of wild2 {
+                                  GHC.Types.False -> Test.QuickCheck.Property.counterexample9
+                                  GHC.Types.True -> Test.QuickCheck.Property.succeeded } })
+                               (GHC.Types.[]
+                                  @ (Test.QuickCheck.Property.Rose
+                                       Test.QuickCheck.Property.Result)))
+                      } in
+                      (\ (ds :: Test.QuickCheck.Random.QCGen) (ds4 :: GHC.Types.Int) ->
+                       x1)
+                        `cast`
+                      (Trans
+                           (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                     (Test.QuickCheck.Property.N:Prop[0])))
+                           (Sym (Test.QuickCheck.Property.N:Property[0]))) }) -}
+19ba8be006eb053ae478c183456a57ca
+  sorted_list_mmaximum_heapsort_go ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

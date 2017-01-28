@@ -1,0 +1,978 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-28 17:09:49.8746194 UTC
+
+interface main@main:HUnit 8001
+  interface hash: 8fcf7837f1e97655d1eb78e3d62282c8
+  ABI hash: b92d3f44ca98c0530da4e77b85f3de37
+  export-list hash: 211c7cf3d31d494b245ee0e9b9ba9c76
+  orphan hash: 50375c759f9b519ef1a0980cbf92a8e2
+  flag hash: 7dcd246fc4e0363d11beac4112be1c4a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HUnit.bubblesortTest
+  HUnit.childrenTest1
+  HUnit.childrenTest2
+  HUnit.heapsortTest
+  HUnit.insertionsortTest
+  HUnit.mergeTest
+  HUnit.mergesortTest
+  HUnit.myInsertTest
+  HUnit.parentTest
+  HUnit.quicksortTest
+  HUnit.selectionsortTest
+module dependencies:
+package dependencies: HUnit-1.3.1.2@HUnit-1.3.1.2-LggooYwT1UPHSoNYWvAdgk
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.0.0*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Complex base-4.9.0.0:Data.Either
+                         base-4.9.0.0:Data.Functor.Const base-4.9.0.0:Data.Functor.Identity
+                         base-4.9.0.0:Data.List.NonEmpty base-4.9.0.0:Data.Monoid
+                         base-4.9.0.0:Data.Semigroup base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:Data.Version base-4.9.0.0:Data.Void
+                         base-4.9.0.0:GHC.Exts base-4.9.0.0:GHC.Generics
+                         base-4.9.0.0:GHC.IO.Exception base-4.9.0.0:GHC.TypeLits
+import  -/  HUnit-1.3.1.2@HUnit-1.3.1.2-LggooYwT1UPHSoNYWvAdgk:Test.HUnit dedf8672d65dfb10ce8a7e3bc8c64de6
+import  -/  HUnit-1.3.1.2@HUnit-1.3.1.2-LggooYwT1UPHSoNYWvAdgk:Test.HUnit.Base ede56fd528e19c0ad00ee2cc864d7387
+import  -/  base-4.9.0.0:Prelude 2d9cd8b0ec3d728f62b734df888d2e34
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Bubblesort bc217c85defff778837e01c6c4388766
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Heapsort 7662403c30bac845d3e2197c789788d5
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Insertionsort a2fbcfe394a1531e44663881473f4f0c
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Mergesort 007a30bb491b9af250d7296536512dca
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Quicksort 75e16aaf9e6c78af16a42c0966e668a0
+import  -/  our-sorting-algos-0.1.0.0@our-sorting-algos-0.1.0.0-9Uo5Cavp7OMJexfpjtEIv6:Selectionsort a92f9d03eb0e827e19f05c014f7f25e8
+53e4666d5bd5f52c5ab584420811ffc3
+  $s$fEq[] :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ GHC.Integer.Type.Integer
+                     GHC.Integer.Type.$fEqInteger)
+                  HUnit.$s$fEq[]_$s$fEq[]_$c/= -}
+3e4959635c84d98b8ff4e37d033ff026
+  $s$fEq[]_$s$fEq[]_$c/= ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Integer.Type.Integer])
+                   (y :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fEqInteger
+                      x
+                      y)) -}
+b6e2c0f97da405b157f13aac5c13a04e
+  $s$fShow[] :: GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  HUnit.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  HUnit.$s$fShow[]_$s$fShow[]_$cshow
+                  HUnit.$s$fShow[]_$s$fShow[]_$cshowList -}
+3ebf3a78dbe794de70a1fc34f6ddbd77
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [GHC.Integer.Type.Integer] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Show.$fShowInteger_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c86989e537025b0301022fb564142b27
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Integer.Type.Integer]
+                   GHC.Show.$fShowInteger_$cshowList
+                   eta
+                   eta1) -}
+8b5f0d0accca5e9a865a9b01426cb530
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [GHC.Integer.Type.Integer] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Integer.Type.Integer])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShowInteger_$cshowList eta eta1) -}
+f4c4f4a4ddd56dc64bc1d05dc451211c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module HUnit.$trModule2 HUnit.$trModule1) -}
+a367914d50c30bcd1be6440d7b9928d2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "HUnit"#) -}
+f245291c25c92275161b99c3183a0894
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+0c2d7bb160e64490b984de68d3e95fa4
+  bubblesortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.bubblesortTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+a6594d9d3cbcba6ddbadff3b4c26fcbe
+  bubblesortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.bubblesortTest22
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.bubblesortTest21
+                   HUnit.bubblesortTest15
+                   HUnit.bubblesortTest2) -}
+4f0acfa8d39c4cd9868eb0217752fc0f
+  bubblesortTest10 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (7) -}
+d24d19c32a004a0598d63c7294f41cad
+  bubblesortTest11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+3d9e3b89efaed821f25853328dd59c11
+  bubblesortTest12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+a13e8d1db0b5f5a5fd71cc78a95a281e
+  bubblesortTest13 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+024b3008bf17dadebfa0b0828d58f348
+  bubblesortTest14 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+7aa4e5e1d024cf50e5d2aa2843d92f0c
+  bubblesortTest15 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest9
+                   HUnit.bubblesortTest16) -}
+6f77bce02e3e41fa0500800ac950b18a
+  bubblesortTest16 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.bubblesortTest17) -}
+57cf3fdc2397dd3beaca4289ceaed11e
+  bubblesortTest17 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.bubblesortTest18) -}
+51e917db2111fe3e6298086d13cfdfd0
+  bubblesortTest18 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.bubblesortTest19) -}
+dd23acc2e78536999fdf80e12d05ad83
+  bubblesortTest19 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest11
+                   HUnit.bubblesortTest20) -}
+2655a474085b3ce1e968a8f0368c6063
+  bubblesortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Bubblesort.$wbubblesort_loop
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3
+                   0#) -}
+a440a773da73e8ccba9b67015b7500c1
+  bubblesortTest20 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest10
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+0c49bcac3a89a1430cadfdd2b4f87b03
+  bubblesortTest21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bubblesortTest"#) -}
+87aa072905e88b458868ba680fcf4c87
+  bubblesortTest22 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.bubblesortTest23
+                   GHC.Stack.Types.EmptyCallStack) -}
+2366f316e64acb5719edcea3f4be936e
+  bubblesortTest23 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.bubblesortTest25
+                   HUnit.bubblesortTest25
+                   HUnit.bubblesortTest25
+                   HUnit.bubblesortTest24) -}
+4492973a15e94b59c1081337e82799e7
+  bubblesortTest24 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
+6bd22440cbd1246765c962ad47c5dd41
+  bubblesortTest25 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 29#) -}
+f695b762550b5a685c485e3e44851faf
+  bubblesortTest26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "test\\HUnit.hs"#) -}
+f4926e55f3a7fe6ee7764787e53b2c95
+  bubblesortTest27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "HUnit"#) -}
+7de3f3e4f9f6c6e1af5772128749993f
+  bubblesortTest28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+bb569c2b5e4d07337176d05f1e33b3f9
+  bubblesortTest29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "assertEqual"#) -}
+5e43a92e072994667b1a745dff6fb8f2
+  bubblesortTest3 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.bubblesortTest4) -}
+b5734fa52ce2d5688195758681ec69c1
+  bubblesortTest4 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.bubblesortTest5) -}
+a89899ea25a55efbae5b90a05af374d4
+  bubblesortTest5 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.bubblesortTest6) -}
+fbcd88ab19305ab7ea60d523a2c5731c
+  bubblesortTest6 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest11
+                   HUnit.bubblesortTest7) -}
+813337752d6892dd3c803a47db7c00c6
+  bubblesortTest7 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest10
+                   HUnit.bubblesortTest8) -}
+69b3b740f57a5baa3bcbc980cec0d9f5
+  bubblesortTest8 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest9
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+f62498bdf203636d0998d1074c5a689b
+  bubblesortTest9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+44c80a918b1a88e713a3648141653d55
+  childrenTest1 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.childrenTest4 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+fc20cf7126d7baaa1291140807d7765f
+  childrenTest10 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 50#) -}
+6d5ba7fb6a859bb8d2e998a880ed163e
+  childrenTest11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ GHC.Integer.Type.Integer
+                   HUnit.childrenTest13
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Integer.Type.$fEqInteger
+                   GHC.Show.$fShowInteger
+                   HUnit.childrenTest12
+                   HUnit.bubblesortTest12
+                   HUnit.bubblesortTest12) -}
+d91487fde5a3ca57970cf7521b0b5183
+  childrenTest12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "childrenTest2"#) -}
+e7861e1e81ebf6a1692c8991e22a0c15
+  childrenTest13 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.childrenTest14
+                   GHC.Stack.Types.EmptyCallStack) -}
+7753b5294edcfa137d21214949c7714a
+  childrenTest14 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.childrenTest16
+                   HUnit.childrenTest9
+                   HUnit.childrenTest16
+                   HUnit.childrenTest15) -}
+b8af13bfaa817c089b0ab3bdec826f20
+  childrenTest15 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 74#) -}
+2c93e6974629cfc5a6bae1f41e514002
+  childrenTest16 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 53#) -}
+41698742cf38b94ab746d63b1dfffce7
+  childrenTest2 :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.childrenTest11 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+c2c711ac036d79255e55ffdecbe86a22
+  childrenTest4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ GHC.Integer.Type.Integer
+                   HUnit.childrenTest6
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Integer.Type.$fEqInteger
+                   GHC.Show.$fShowInteger
+                   HUnit.childrenTest5
+                   HUnit.bubblesortTest13
+                   HUnit.bubblesortTest13) -}
+72e2c1fa1a4bf723800ca81d33ca82e6
+  childrenTest5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "childrenTest1"#) -}
+bccf3b6da4f49cfc4066f14df75a86e0
+  childrenTest6 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.childrenTest7
+                   GHC.Stack.Types.EmptyCallStack) -}
+b074a2c43682b7e224ac14017e717034
+  childrenTest7 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.childrenTest10
+                   HUnit.childrenTest9
+                   HUnit.childrenTest10
+                   HUnit.childrenTest8) -}
+a368922f291fa1ae33893474e9d60997
+  childrenTest8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 73#) -}
+5e73256bc9e8cd585b8909cdc0947e95
+  childrenTest9 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 28#) -}
+33e06c27c725fef49d2933a548ba0e60
+  heapsortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.heapsortTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+1353054fe4d78a71c461b9f18cf36ec5
+  heapsortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.heapsortTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.heapsortTest3
+                   HUnit.bubblesortTest15
+                   HUnit.heapsortTest2) -}
+b357edb1c3423334acc8d3aff94e5387
+  heapsortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Heapsort.heapsort
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3) -}
+d54bc2a425e7d09fedd1dabd66fe3dca
+  heapsortTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "heapsortTest"#) -}
+8cc82036e786bbe88955dc83b05f9451
+  heapsortTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.heapsortTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+5ddac3a93257843771f6a3aa7839968b
+  heapsortTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.heapsortTest8
+                   HUnit.heapsortTest7
+                   HUnit.heapsortTest8
+                   HUnit.heapsortTest6) -}
+24cb92b78636dc917c3952a678917b8d
+  heapsortTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 94#) -}
+41175bc02af512573c427a83f3706527
+  heapsortTest7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 27#) -}
+5ef7f4bfe2e70745752acad5af2df5b4
+  heapsortTest8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 47#) -}
+e31f1446909c4d250ae3605f3043c27b
+  insertionsortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.insertionsortTest1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+307a682bf6c165a8706f940debf65059
+  insertionsortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.insertionsortTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.insertionsortTest3
+                   HUnit.bubblesortTest15
+                   HUnit.insertionsortTest2) -}
+c08a2508ad41817e9d70e3305ea09ed4
+  insertionsortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Insertionsort.myInsert
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+ac9c1bc15adbd176fde6ca8dc776913e
+  insertionsortTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "insertionsorTest"#) -}
+a8ca7ee39b3720909c2ad38d1640811b
+  insertionsortTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.insertionsortTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+0181141d1a6785d207d687adcac69169
+  insertionsortTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.insertionsortTest7
+                   HUnit.insertionsortTest7
+                   HUnit.insertionsortTest7
+                   HUnit.insertionsortTest6) -}
+50195808441bfc95c58d2b70d6291940
+  insertionsortTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 108#) -}
+4d9697739afd298100a64ed6182c640d
+  insertionsortTest7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 32#) -}
+903c4eb20adcba6b502bfc95b7c18d97
+  mergeTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.mergeTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+6f6ba36a84f05cfcc9fda83c7984ba86
+  mergeTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.mergeTest14
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.mergeTest13
+                   HUnit.mergeTest8
+                   HUnit.mergeTest2) -}
+a69d83d8b6d075e2b26f341f9c3d75bb
+  mergeTest10 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest11
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+85a5d376afd782ae6ff21518832e090c
+  mergeTest11 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.mergeTest12) -}
+5374b5a5d6158627414f8ad3cf372417
+  mergeTest12 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.mergeTest6) -}
+ce8d6e08efe1c8b6d535f36e7d7fa94f
+  mergeTest13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "mergeTest"#) -}
+a463aeb9785a3caade002b93cd0ca89d
+  mergeTest14 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.mergeTest15
+                   GHC.Stack.Types.EmptyCallStack) -}
+d7d0c7e0c8cd0bb9d919a1e6b4567ce6
+  mergeTest15 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.mergeTest18
+                   HUnit.mergeTest17
+                   HUnit.mergeTest18
+                   HUnit.mergeTest16) -}
+4256afef68e554084e9f0c71cd62cc7c
+  mergeTest16 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 83#) -}
+bdd4b6718cd69c2aa170bedc45bbce7a
+  mergeTest17 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 24#) -}
+e9665a3b566ea082778c0e7e2fae0b21
+  mergeTest18 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 41#) -}
+51f22fe2c75de345e930e05155a67a51
+  mergeTest2 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.mergeTest3) -}
+8fde2464c5b97c97e4db36c6608f00b6
+  mergeTest3 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.mergeTest4) -}
+abbcd7e36b47987263fa6e358952aa28
+  mergeTest4 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.mergeTest5) -}
+b357a98285f1f0ad9d2963c9d92df771
+  mergeTest5 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest11
+                   HUnit.mergeTest6) -}
+dd99968396a72a0bb4733e3a01fda37b
+  mergeTest6 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.mergeTest7
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+4eccc08649c7a0d9f316434d5ed07944
+  mergeTest7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+98c52a640b7e48ba5cb14c2257581c0c
+  mergeTest8 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Mergesort.merge
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.mergeTest11
+                   HUnit.mergeTest9) -}
+dfda31204916cc45b14a7dca704976c5
+  mergeTest9 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.mergeTest10) -}
+1e58add3f6c4aad0eaabcd4aa55893bd
+  mergesortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.mergesortTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+d45dfe698f27fec92575f54c7a3e3436
+  mergesortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.mergesortTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.mergesortTest3
+                   HUnit.bubblesortTest15
+                   HUnit.mergesortTest2) -}
+253b74cca69fac35fd6c75b3c1a1a279
+  mergesortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Mergesort.mergesort
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3) -}
+b7cae4fa802ea101efdb78a1187390b2
+  mergesortTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "mergesortTest"#) -}
+c57a771892bff5f15bb8fb9058eb2460
+  mergesortTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.mergesortTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+c8128b417c4b52c741b3f0c265305aed
+  mergesortTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.mergesortTest7
+                   HUnit.childrenTest9
+                   HUnit.mergesortTest7
+                   HUnit.mergesortTest6) -}
+a4a243f0bab9a1fbc346c92a7c9e577b
+  mergesortTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 97#) -}
+dab0b2b8f023714dd3987f5d1a8fd09e
+  mergesortTest7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 38#) -}
+2c4b6d098024e0030557ae6075b63e6d
+  myInsertTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.myInsertTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+ccbb08fd3388d414be23ccccc9bcf55e
+  myInsertTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.myInsertTest12
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.myInsertTest11
+                   HUnit.myInsertTest7
+                   HUnit.myInsertTest2) -}
+c3721632d1d800ffcd3e50b7d3385242
+  myInsertTest10 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.mergeTest10) -}
+54f834fe3e5b458f103c0fa6f6863008
+  myInsertTest11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "myInsertTest"#) -}
+fafd86e99b18038cea465bd11700f1d2
+  myInsertTest12 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.myInsertTest13
+                   GHC.Stack.Types.EmptyCallStack) -}
+876a42fdb98a2d7aa8c47feb7ac9ef8e
+  myInsertTest13 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.myInsertTest15
+                   HUnit.heapsortTest7
+                   HUnit.myInsertTest15
+                   HUnit.myInsertTest14) -}
+c5a6baa50afb0e6cdc0888389b634426
+  myInsertTest14 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 104#) -}
+40b30ba23f1bec19bd3fb908e3e27dd9
+  myInsertTest15 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 35#) -}
+3bffb4a4aa31c61da14e1bc77c231cb6
+  myInsertTest2 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest13
+                   HUnit.myInsertTest3) -}
+d976483e082489a9cecf7fb3040aa18a
+  myInsertTest3 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.myInsertTest4) -}
+43302d23e9f36ac003f03942bf959d8e
+  myInsertTest4 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.myInsertTest5) -}
+7902e2c7abd25714b7783a70a29d249b
+  myInsertTest5 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest11
+                   HUnit.myInsertTest6) -}
+f435739065cc8a6d0dabefdf14ec3d3a
+  myInsertTest6 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.mergeTest7
+                   HUnit.bubblesortTest20) -}
+ad301d74edb1f35e5e982332471c8462
+  myInsertTest7 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Insertionsort.myInsert
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.myInsertTest10
+                   HUnit.myInsertTest8) -}
+bae38ac85b1247674863fd0f1e92da73
+  myInsertTest8 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest12
+                   HUnit.myInsertTest9) -}
+f02fc7bd15850af15c8f40b108b14cb0
+  myInsertTest9 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   HUnit.bubblesortTest14
+                   HUnit.myInsertTest6) -}
+b4132c831087d258b760711d028a3bb3
+  parentTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.parentTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+e3a78a68cfaa7335447f498d138ed675
+  parentTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ GHC.Integer.Type.Integer
+                   HUnit.parentTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Integer.Type.$fEqInteger
+                   GHC.Show.$fShowInteger
+                   HUnit.parentTest3
+                   HUnit.parentTest2
+                   HUnit.bubblesortTest9) -}
+61667102af11e10e61cbf039a1686e7e
+  parentTest2 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Heapsort.$wparent
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   HUnit.bubblesortTest12) -}
+003172bf551437cfe8c6491d93cce85a
+  parentTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "parentTest"#) -}
+759e0cb3c2439c560a553fdd69445b9a
+  parentTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.parentTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+ad61a026157255cb14e184bb39897bf9
+  parentTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.parentTest8
+                   HUnit.parentTest7
+                   HUnit.parentTest8
+                   HUnit.parentTest6) -}
+78d84dbc4639a2600c0572bf0dbe226e
+  parentTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 64#) -}
+e4e736646f9428e5ff7b1c116e1972a8
+  parentTest7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 25#) -}
+73dfe7c94e04081414941ecaacd0f287
+  parentTest8 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 56#) -}
+735ea401ec2a8b3871195fdd1c3d5edf
+  quicksortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.quicksortTest1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+a150d0fd6f89bb40c947d549d2abe536
+  quicksortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.quicksortTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.quicksortTest3
+                   HUnit.bubblesortTest15
+                   HUnit.quicksortTest2) -}
+a3c0f400138cc2247cbdad7df8d39b9d
+  quicksortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Quicksort.quicksort
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3) -}
+86fcc63766b9371e4f3064b5067d9b84
+  quicksortTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "quicksortTest"#) -}
+4f945acf94a8d1d8b79903e8a614a82b
+  quicksortTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.quicksortTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+b59238821ff9932d95cc8d6a0b06d9ee
+  quicksortTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.quicksortTest6
+                   HUnit.childrenTest9
+                   HUnit.quicksortTest6
+                   HUnit.mergesortTest6) -}
+898773129db6a2ff027fc4b2b8358063
+  quicksortTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 26#) -}
+ff59b0f28b92a452b79c7feda6f36f97
+  selectionsortTest :: Test.HUnit.Base.Test
+  {- Strictness: m1,
+     Unfolding: (Test.HUnit.Base.TestCase
+                   HUnit.selectionsortTest1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+e9a8bb8547d2eacf369434c2c2c8df09
+  selectionsortTest1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Test.HUnit.Base.@=?7
+                   @ [GHC.Integer.Type.Integer]
+                   HUnit.selectionsortTest4
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0] <"loc">_N <GHC.Stack.Types.CallStack>_N))
+                   HUnit.$s$fEq[]
+                   HUnit.$s$fShow[]
+                   HUnit.selectionsortTest3
+                   HUnit.bubblesortTest15
+                   HUnit.selectionsortTest2) -}
+f5865af617db92752a0551b5749f715d
+  selectionsortTest2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Selectionsort.selectionsort
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   HUnit.bubblesortTest3) -}
+0ffb6a53848b930d491162d38e574a8e
+  selectionsortTest3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "selectionsortTest"#) -}
+c98e576c813b79f7d4eff2d736ecf86d
+  selectionsortTest4 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   HUnit.bubblesortTest29
+                   HUnit.selectionsortTest5
+                   GHC.Stack.Types.EmptyCallStack) -}
+912b9c4b5051ae30cf50822443e57abe
+  selectionsortTest5 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   HUnit.bubblesortTest28
+                   HUnit.bubblesortTest27
+                   HUnit.bubblesortTest26
+                   HUnit.selectionsortTest7
+                   HUnit.insertionsortTest7
+                   HUnit.selectionsortTest7
+                   HUnit.selectionsortTest6) -}
+c6fb9cd1140f5666da87dc0c971f3757
+  selectionsortTest6 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 109#) -}
+5dde7579b5d8db5b5bc11ad4bdab153d
+  selectionsortTest7 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 44#) -}
+"SPEC/HUnit $fEq[] @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                         GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[] @ GHC.Integer.Type.Integer $dEq = HUnit.$s$fEq[]
+"SPEC/HUnit $fEq[]_$c/= @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                              GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[]_$c/= @ GHC.Integer.Type.Integer $dEq
+  = HUnit.$s$fEq[]_$s$fEq[]_$c/=
+"SPEC/HUnit $fShow[] @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                             GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[] @ GHC.Integer.Type.Integer $dShow
+  = HUnit.$s$fShow[]
+"SPEC/HUnit $fShow[]_$cshow @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                    GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshow @ GHC.Integer.Type.Integer $dShow
+  = HUnit.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/HUnit $fShow[]_$cshowList @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                        GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowList @ GHC.Integer.Type.Integer $dShow
+  = HUnit.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/HUnit $fShow[]_$cshowsPrec @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                         GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowsPrec @ GHC.Integer.Type.Integer $dShow
+  = HUnit.$s$fShow[]_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

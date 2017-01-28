@@ -4,32 +4,28 @@ import Test.QuickCheck
 import HUnit
 import Test.HUnit
 
+
 main :: IO Counts
 main = do
-
 --TEST 1
-
 --idempotency — applying a function twice has the same result as applying it only once
-quickCheck idempotent_quicksort
-quickCheck idempotent_bubblesort 
-quickCheck idempotent_insertionsort 
-quickCheck idempotent_mergesort 	
-quickCheck idempotent_selectionsort 
-quickCheck idempotent_heapsort 
-
-
-
+  quickCheck idempotent_quicksort
+  quickCheck idempotent_bubblesort 
+  quickCheck idempotent_insertionsort 
+  quickCheck idempotent_mergesort 	
+  quickCheck idempotent_selectionsort 
+  quickCheck idempotent_heapsort 
 
 --TEST 2
 
 --the first element in a sorted list should always be the smallest element of the input list
 --filtering out empty list (reveal an error because od definition of head and minimum)
-quickCheck sorted_list_minimum_quicksort 		
-quickCheck sorted_list_minimum_bubblesort  		
-quickCheck sorted_list_minimum_insertionsort 	
-quickCheck sorted_list_minimum_mergesort 	
-quickCheck sorted_list_minimum_selectionsort  	
-quickCheck sorted_list_minimum_heapsort  		
+  quickCheck sorted_list_minimum_quicksort 		
+  quickCheck sorted_list_minimum_bubblesort  		
+  quickCheck sorted_list_minimum_insertionsort 	
+  quickCheck sorted_list_minimum_mergesort 	
+  quickCheck sorted_list_minimum_selectionsort  	
+  quickCheck sorted_list_minimum_heapsort  		
 
 
 
@@ -38,12 +34,12 @@ quickCheck sorted_list_minimum_heapsort
 
 --the lat element in a sorted list should always be the largest element of the input list
 --filtering out empty list (reveal an error because od definition of head and minimum)
-quickCheck sorted_list_maximum_quicksort 		
-quickCheck sorted_list_maximum_bubblesort  	
-quickCheck sorted_list_maximum_insertionsort 	
-quickCheck sorted_list_maximum_mergesort 		
-quickCheck sorted_list_maximum_selectionsort  	
-quickCheck sorted_list_mmaximum_heapsort  		 
+  quickCheck sorted_list_maximum_quicksort 		
+  quickCheck sorted_list_maximum_bubblesort  	
+  quickCheck sorted_list_maximum_insertionsort 	
+  quickCheck sorted_list_maximum_mergesort 		
+  quickCheck sorted_list_maximum_selectionsort  	
+  quickCheck sorted_list_mmaximum_heapsort  		 
 
 
 
@@ -51,12 +47,12 @@ quickCheck sorted_list_mmaximum_heapsort
 --TEST 4
 
 --each element should be smaller than, or equal to, its successor
-quickCheck compare_elements_quicksort 
-quickCheck compare_elements_bubblesort  
-quickCheck compare_elements_insertionsort 
-quickCheck compare_elements_mergesort  
-quickCheck compare_elements_selectionsort 
-quickCheck compare_elements_heapsort  
+  quickCheck compare_elements_quicksort 
+  quickCheck compare_elements_bubblesort  
+  quickCheck compare_elements_insertionsort 
+  quickCheck compare_elements_mergesort  
+  quickCheck compare_elements_selectionsort 
+  quickCheck compare_elements_heapsort  
  
 
 --TEST 5
@@ -64,15 +60,14 @@ quickCheck compare_elements_heapsort
 --operator \\ is difference function on lists, null tests whether the difference list is empty
 --is_permut xs ys = null (xs \\ ys) && null (ys \\ xs)
 
-quickCheck output_perm_of_input_quicksort
-quickCheck output_perm_of_input_bubblesort 
-quickCheck output_perm_of_input_insertionsort 
-quickCheck output_perm_of_input_mergesort
-quickCheck output_perm_of_input_selectionsort 
-quickCheck output_perm_of_input_heapsort  
+  quickCheck output_perm_of_input_quicksort
+  quickCheck output_perm_of_input_bubblesort 
+  quickCheck output_perm_of_input_insertionsort 
+  quickCheck output_perm_of_input_mergesort
+  quickCheck output_perm_of_input_selectionsort 
+  quickCheck output_perm_of_input_heapsort  
 
-putStrLn "quicksortTest, bubblesortTest, insertionsortTest, insertTest, mergesortTest, mergeTest, selectionsortTest, heapsortTest, childrenTest,parentTest"
-  runTestTT $ TestList [TestLabel "quicksortTest" quicksortTest,TestLabel "bubblesortTest"bubblesortTest,TestLabel "insertionsortTest" insertionsortTest, TestLabel "insertTest" mergesortTest,TestLabel "mergesortTest" mergesortTest,
+  putStrLn "quicksortTest, bubblesortTest, insertionsortTest, insertTest, mergesortTest, mergeTest, selectionsortTest, heapsortTest, childrenTest,parentTest"
+  runTestTT $ TestList [TestLabel "quicksortTest" quicksortTest,TestLabel "bubblesortTest"bubblesortTest,TestLabel "insertionsortTest" insertionsortTest, TestLabel "myInsertTest" myInsertTest,TestLabel "mergesortTest" mergesortTest,
+      TestLabel "mergeTest" mergeTest,TestLabel "selectionsortTest" selectionsortTest,TestLabel "heapsortTest" heapsortTest, TestLabel "childrenTest1" childrenTest1, TestLabel "childrenTest2" childrenTest2, TestLabel "parentTest" parentTest ]
  
-    TestLabel "mergeTest" mergeTest,TestLabel "selectionsortTest" selectionsortTest,TestLabel "heapsortTest" heapsortTest, TestLabel "childrenTest" childrenTest, TestLabel "parentTest" parentTest ]]
-, 
