@@ -3,19 +3,21 @@ Module      : Main
 Description : main module of our sorting algos project
 Copyright   : (c) Julia Sypień, Patrycja Tarasińska, 2017
 License     : GPL-3
-Maintainer  : karolbartyzel@interia.pl
+Maintainer  : sasuke96@tlen.pl
 Stability   : experimental
 Portability : POSIX
 -}
 module Main where
 
 import Heapsort
-import Bubblesort
-import Insertionsort
-import Selectionsort
-import Mergesort
 import Quicksort
+import Insertionsort
+import Mergesort
+import Selectionsort
+import Bubblesort
 
+
+-- * functions
 -- |main function that gives some iinformation about our project
 main :: IO ()
 main = do
